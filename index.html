@@ -114,6 +114,85 @@
             background-color: #0a2540;
             color: white;
         }
+/* Container */
+.timeline {
+    width: 80%;
+    margin: 40px auto;
+}
+
+
+
+/* Each row */
+.week {
+    display: flex;
+    margin-bottom: 20px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Left red block */
+.week-left {
+    background: linear-gradient(135deg, #ff5a3c, #c62828);
+    color: white;
+    padding: 30px;
+    width: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.week:hover  {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+   
+}
+
+/* Right content */
+.week-right {
+    background: #e0e0e0;
+    padding: 30px;
+    flex: 1;
+}
+
+/* Titles */
+.week-left h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.week-left span {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* List */
+.week-right ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.week-right li {
+    margin-bottom: 10px;
+}
+.header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: 700;
+    color: #c62828;
+}
+
+.header p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    font-weight: 300;
+}
 
         /* Responsive */
         @media (max-width: 600px) {
@@ -128,6 +207,8 @@
 
     <!-- Navbar -->
     <nav>
+       <a href="no-style.html">No CSS</a>
+</label>
         <a href="#about">About</a>
         <a href="#hobbies">Hobbies</a>
         <a href="#contact">Contact</a>
@@ -189,7 +270,73 @@
                 <source controls preload="none" src="./video/algerian_flag.mp4" type="video/webm">
             </video>
         </section>
+<div class="header">
+    <h1>My Weekly Schedule</h1>
+    <p>Plan for the Next 4 Weeks</p>
+</div>
+<div class="timeline">
 
+    <!-- Week 1 -->
+    <div class="week">
+        <div class="week-left">
+            <h2>WEEK</h2>
+            <span>01</span>
+        </div>
+        <div class="week-right">
+            <ul>
+                <li>Intro to AIESEC and Team building</li>
+                <li>Intro to HTML</li>
+                <li>Text Formatting & Media - Forms & Input</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Week 2 -->
+    <div class="week">
+        <div class="week-left">
+            <h2>WEEK</h2>
+            <span>02</span>
+        </div>
+        <div class="week-right">
+            <ul>
+                <li>Tables - Semantic HTML</li>
+                <li>Research and debate</li>
+                <li>CSS Basics - Text & Fonts</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Week 3 -->
+    <div class="week">
+        <div class="week-left">
+            <h2>WEEK</h2>
+            <span>03</span>
+        </div>
+        <div class="week-right">
+            <ul>
+                <li>Styling & Effects - Responsive Design</li>
+                <li>CV and LinkedIn</li>
+                <li>Box Model - Positioning & Layout</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Week 4 -->
+    <div class="week">
+        <div class="week-left">
+            <h2>WEEK</h2>
+            <span>04</span>
+        </div>
+        <div class="week-right">
+            <ul>
+                <li>Presentation skills</li>
+                <li>Working space</li>
+                <li>Closing Presentation</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
         <!-- Contact -->
         <section id="contact">
             <h2>Contact Me</h2>
@@ -207,6 +354,7 @@
                 <button type="submit">Send</button>
             </form>
         </section>
+
 
     </div>
 
