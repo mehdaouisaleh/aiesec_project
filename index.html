@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Personal Profile</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #0a2540;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        section {
+            margin-top: 40px;
+        }
+
+        /* About section */
+        .about {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .about img {
+            width: 180px;
+            border-radius: 10px;
+        }
+
+        /* Lists */
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        /* Media */
+        audio, video {
+            margin-top: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /* Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+        }
+
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #0a2540;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #163a63;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #0a2540;
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <h1>My Personal Profile</h1>
+
+        <!-- About -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <div class="about">
+                <img loading="lazy" src="./images/profile_pic.png" alt="Profile Image">
+
+                <div>
+                    <p>
+                        Hello! My name is <strong>Saleh</strong>. I am learning 
+                        <em>HTML & CSS</em> to build modern websites.
+                    </p>
+
+                    <p>
+                        I enjoy <b>technology</b>, <i>learning</i>, and improving my skills every day.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobbies -->
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+
+            <ul>
+                <li>Photography</li>
+                <li>Sports</li>
+                <li>Watching documentaries</li>
+            </ul>
+
+            <ol>
+                <li>Learn coding</li>
+                <li>Build projects</li>
+                <li>Improve daily</li>
+            </ol>
+
+            <p>
+                Visit 
+                <a href="https://www.aiesec.org" target="_blank">AIESEC Website</a>
+            </p>
+
+            <!-- Media -->
+            <h3>Algerian National Anthem</h3>
+            <audio controls>
+                <source src="./audio/anthem.m4a" >
+            </audio>
+
+            <h3>Algerian Flag</h3>
+            <video controls>
+                <source controls preload="none" src="./video/algerian_flag.mp4" type="video/webm">
+            </video>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form>
+                <label>Name:</label>
+                <input type="text" placeholder="Your name">
+
+                <label>Email:</label>
+                <input type="email" placeholder="Your email">
+
+                <label>Message:</label>
+                <textarea rows="4" placeholder="Write something..."></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© Aiesec Bahrain 2026</p>
+    </footer>
+
+</body>
+</html>
